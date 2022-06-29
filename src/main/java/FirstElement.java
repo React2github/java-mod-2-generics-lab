@@ -1,5 +1,15 @@
+import java.util.Arrays;
+
 class Problem {
-    // declare the getFirstElement method here
+     static <E> String getFirstElement(E[] array) {
+        if(array.length > 0) {
+            return Arrays.toString(array); 
+        } 
+        else {
+            return null;
+        }
+        
+    }
 }
 
 public class FirstElement {
@@ -8,8 +18,8 @@ public class FirstElement {
         Integer[] inputEmpty = new Integer[5];
         String[] inputStr = { "Cake", "Donut", "Cupcake" };
 
-        // System.out.println(Problem.getFirstElement(inputInt)); // 1
-        // System.out.println(Problem.getFirstElement(inputEmpty)); // null
-        // System.out.println(Problem.getFirstElement(inputStr)); // Cake
+        System.out.println(Problem.getFirstElement(inputInt)); // 1
+        System.out.println(Problem.getFirstElement(inputEmpty)); // null
+        System.out.println(Problem.getFirstElement(inputStr)); // Cake
     }
 }

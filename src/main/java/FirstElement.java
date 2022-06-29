@@ -1,9 +1,9 @@
-import java.util.Arrays;
+
 
 class Problem {
-     static <E> String getFirstElement(E[] array) {
+     static <E> E getFirstElement(E[] array) {
         if(array.length > 0) {
-            return Arrays.toString(array); 
+            return array[0]; 
         } 
         else {
             return null;
